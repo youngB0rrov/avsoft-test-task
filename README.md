@@ -1,70 +1,33 @@
-# Getting Started with Create React App
+##Тестовое задание на вакансию
+###Web-программист (Front-end)
+###Тестовое задание было выполнено полностью с использованием React.js
+###Для выполнения задания был реализован следующий  функционал:
++ Сортировка по столбцам: при нажатии на название столбца строки таблицы
+сортируются по возрастанию, при повторном клике - по убыванию. Графическим
+элементом или текстовым сообщением указывается направление сортировки
++ Клиентская пагинация: данные необходимо отображать постранично: 1,2, 5
+  элементов на страницу. Необходимо предоставить пользовательскую навигацию для
+  перехода по страницам. Из-за малого количества данных (10 объектов) было принято решение сделать пользовательскую
+  пагинацию по 1, 2, 5 элементов.
++ Фильтрация: компонент предоставляет текстовое поле, в которое пользователь может
+  ввести текст. Перефильтрация осуществляется по мере ввода.
++ По клике на строку таблицы значения полей выводятся в дополнительном блоке под
+  таблицей.
++ Данные в таблицу загружаются с сервера. Способ загрузки с сервера на ваш выбор. Ссылка: https://jupiter.avsw.ru/testcases/data
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Тестирование задания:
++ По скорости:
+  + При тестировке react-приложения на скорость не было обнаружено зависания приложения при сортировке, фильтрации
+    или их загрузке
+  + При загрузки приложения показывается простой прелоадер с текстовым сообщением (Dats is being Loaded)
++ По правильности выполнения функционала:
+  + Проверка сортировки на порядок правильности (все данные выводятся в лексографическом порядке)
+  + Проверка фильтрации на правильность. При вводе данных в поле ввода данные искались как в большом, так и в малом 
+  регистре, он не имеел значения
+  + Корректное отображение данных при одновременном использовании фильтрации и сортировки, данные были отображены корректно,
+  элементы показывались те что надо
+  + Проверка пагинации: При применении фильтрации данных, количество страниц, доступных для выбора должно уменьшаться,
+  количество отфильтрованных элементов на страницу не превышало заданное максимальное количество
++ По адаптивности:
+  + Таблица хорошо отображается для ширины экрана до 500px, проверено на эмуляторе 
 
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

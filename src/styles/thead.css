@@ -1,0 +1,6 @@
+.table-cells{
+    max-width: 100px;
+}
+.main-table {
+    user-select: none;
+}
